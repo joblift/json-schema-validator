@@ -1,12 +1,26 @@
-[![Build Status](https://travis-ci.org/networknt/json-schema-validator.svg?branch=master)](https://travis-ci.org/networknt/json-schema-validator)
-[![Join the chat at https://gitter.im/networknt/json-schema-validator](https://badges.gitter.im/networknt/json-schema-validator.svg)](https://gitter.im/networknt/json-schema-validator?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Build Status](https://travis-ci.org/joblift/json-schema-validator.svg?branch=master)](https://travis-ci.org/joblift/json-schema-validator)
+[![Join the chat at https://gitter.im/joblift/json-schema-validator](https://badges.gitter.im/joblift/json-schema-validator.svg)](https://gitter.im/joblift/json-schema-validator?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 # json-schema-validator
 
-A Java json schema validator that support json schema draft v4. It is a key component in our
-[light-java](https://github.com/networknt/light-java) microservices framework to validate request
-against OpenAPI specification at runtime.
+A Java json schema validator that support json schema draft v4. It is a fork of
+[networkntjson-schema-validator ](https://github.com/networknt/json-schema-validator) 
 
+It was forked to add extension mechanisms for example for custom keyword validation.
+
+## Maven installation
+
+Add the following to your `pom.xml`:
+
+```xml
+<dependency>
+    <groupId>com.joblift</groupId>
+    <artifactId>json-schema-validator</artifactId>
+    <version>0.1.7</version>
+</dependency>
+```
+
+# Original README content of upstream networknt json-schema-validator
 
 * [Why to use this library?](#why-to-use-this-library)
 * [Maven installation](#maven-installation)

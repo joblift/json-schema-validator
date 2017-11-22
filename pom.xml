@@ -17,11 +17,11 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.networknt</groupId>
+    <groupId>com.github.joblift</groupId>
     <artifactId>json-schema-validator</artifactId>
-    <version>0.1.11</version>
+    <version>0.2.0-SNAPSHOT</version>
     <description>A json schema validator that supports draft v4</description>
-    <url>https://github.com/networknt/json-schema-validator</url>
+    <url>https://github.com/joblift/json-schema-validator</url>
     <name>JsonSchemaValidator</name>
 
     <developers>
@@ -30,11 +30,16 @@
             <name>Steve Hu</name>
             <email>stevehu@gmail.com</email>
         </developer>
+        <developer>
+            <id>kkalass</id>
+            <name>Klas Kalaß</name>
+            <email>klas.kalass@joblift.de</email>
+        </developer>
     </developers>
 
     <issueManagement>
         <system>github</system>
-        <url>https://github.com/networknt/json-schema-validator/issues</url>
+        <url>https://github.com/joblift/json-schema-validator/issues</url>
     </issueManagement>
 
     <licenses>
@@ -46,9 +51,9 @@
     </licenses>
 
     <scm>
-        <connection>scm:git://github.com:networknt/json-schema-validator.git</connection>
-        <developerConnection>scm:git://github.com:networknt/json-schema-validator.git</developerConnection>
-        <url>https://github.com:networknt/json-schema-validator.git</url>
+        <connection>scm:git://github.com:joblift/json-schema-validator.git</connection>
+        <developerConnection>scm:git://github.com:joblift/json-schema-validator.git</developerConnection>
+        <url>https://github.com:joblift/json-schema-validator.git</url>
     </scm>
 
     <distributionManagement>
