@@ -13,11 +13,13 @@
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
   -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project 
+    xmlns="http://maven.apache.org/POM/4.0.0" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.joblift</groupId>
     <artifactId>json-schema-validator</artifactId>
-    <version>0.2.3-SNAPSHOT</version>
+    <version>0.2.4-SNAPSHOT</version>
     <description>A json schema validator that supports draft v4</description>
     <url>https://github.com/joblift/json-schema-validator</url>
     <name>JsonSchemaValidator</name>
@@ -48,20 +50,20 @@
         <connection>scm:git:ssh://git@github.com/joblift/json-schema-validator.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/joblift/json-schema-validator.git</developerConnection>
         <url>https://github.com/joblift/json-schema-validator.git</url>
-      <tag>HEAD</tag>
-  </scm>
-	<distributionManagement>
-		<repository>
-			<id>everyjob-release</id>
-			<name>Joblift Release Repository</name>
-			<url>https://nexus.jol.pm/content/repositories/releases</url>
-		</repository>
-		<snapshotRepository>
-			<id>everyjob-snapshot</id>
-			<name>Joblift Snapshot Repository</name>
-			<url>https://nexus.jol.pm/content/repositories/snapshots</url>
-		</snapshotRepository>
-	</distributionManagement>
+        <tag>HEAD</tag>
+    </scm>
+    <distributionManagement>
+        <repository>
+            <id>everyjob-release</id>
+            <name>Joblift Release Repository</name>
+            <url>https://nexus.jol.pm/content/repositories/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>everyjob-snapshot</id>
+            <name>Joblift Snapshot Repository</name>
+            <url>https://nexus.jol.pm/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
     <properties>
         <java.version>1.6</java.version>
         <java.testversion>1.7</java.testversion>
@@ -248,6 +250,14 @@
                 </executions>
             </plugin>
             <!-- end JACOCO -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.3</version>
+                <configuration>
+                    <tagNameFormat>v@{project.version}</tagNameFormat>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
     <reporting>
@@ -259,5 +269,4 @@
             </plugin>
         </plugins>
     </reporting>
-
 </project>
