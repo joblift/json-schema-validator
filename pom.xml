@@ -47,20 +47,22 @@
         </license>
     </licenses>
     <scm>
-        <connection>scm:git://github.com:joblift/json-schema-validator.git</connection>
-        <developerConnection>scm:git://github.com:joblift/json-schema-validator.git</developerConnection>
-        <url>https://github.com:joblift/json-schema-validator.git</url>
+        <connection>scm:git:ssh://git@github.com/joblift/json-schema-validator.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/joblift/json-schema-validator.git</developerConnection>
+        <url>https://github.com/joblift/json-schema-validator.git</url>
     </scm>
-    <distributionManagement>
-        <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
-        <repository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-        </repository>
-    </distributionManagement>
+	<distributionManagement>
+		<repository>
+			<id>everyjob-release</id>
+			<name>Joblift Release Repository</name>
+			<url>https://nexus.jol.pm/content/repositories/releases</url>
+		</repository>
+		<snapshotRepository>
+			<id>everyjob-snapshot</id>
+			<name>Joblift Snapshot Repository</name>
+			<url>https://nexus.jol.pm/content/repositories/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
     <properties>
         <java.version>1.6</java.version>
         <java.testversion>1.7</java.testversion>
