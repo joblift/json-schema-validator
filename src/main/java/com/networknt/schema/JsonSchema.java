@@ -87,7 +87,7 @@ public class JsonSchema extends BaseJsonValidator {
                 if (node == null){
                     JsonSchema subSchema = schema.fetchSubSchemaNode(validationContext);
                     if (subSchema != null) {
-                        node = schema.getRefSchemaNode(ref);
+                        node = subSchema.getRefSchemaNode(ref);
                     }
                 }
                 if (node == null){
