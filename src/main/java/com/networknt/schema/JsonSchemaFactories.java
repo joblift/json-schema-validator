@@ -98,7 +98,7 @@ public class JsonSchemaFactories {
     }
 
     public static Builder builder(JsonSchemaFactory blueprint) {
-        if (blueprint instanceof StandardJsonSchemaFactory) {
+        if (!(blueprint instanceof StandardJsonSchemaFactory)) {
             throw new IllegalArgumentException("operation only supported for implementations of StandardJsonSchemaFactory"  );
         }
         StandardJsonSchemaFactory other = (StandardJsonSchemaFactory)blueprint;
@@ -185,7 +185,7 @@ public class JsonSchemaFactories {
 
                     if (idMatchesSourceUrl(jsonMetaSchema, schemaNode, schemaURL)) {
 
-                        return new JsonSchema(new ValidationContext(jsonMetaSchema, this), schemaNode, null);
+                        return new JsonSchema(new ValidationContext(jsonMetaSchema, this), schemaNode, true);
                     }
 
                     return newJsonSchema(schemaNode);
