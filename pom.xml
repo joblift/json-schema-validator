@@ -17,7 +17,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.joblift</groupId>
     <artifactId>json-schema-validator</artifactId>
-    <version>0.2.8</version>
+    <version>0.2.9-SNAPSHOT</version>
     <description>A json schema validator that supports draft v4</description>
     <url>https://github.com/joblift/json-schema-validator</url>
     <name>JsonSchemaValidator</name>
@@ -48,7 +48,7 @@
         <connection>scm:git:ssh://git@github.com/joblift/json-schema-validator.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/joblift/json-schema-validator.git</developerConnection>
         <url>https://github.com/joblift/json-schema-validator.git</url>
-        <tag>v0.2.8</tag>
+        <tag>HEAD</tag>
     </scm>
     <distributionManagement>
         <repository>
