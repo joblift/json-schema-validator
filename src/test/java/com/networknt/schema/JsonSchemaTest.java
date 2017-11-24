@@ -36,7 +36,7 @@ import static io.undertow.Handlers.resource;
 
 public class JsonSchemaTest {
     protected ObjectMapper mapper = new ObjectMapper();
-    protected JsonSchemaFactory validatorFactory = JsonSchemaFactory.builder(JsonSchemaFactory.getInstance()).objectMapper(mapper).build();
+    protected JsonSchemaFactory validatorFactory = JsonSchemaFactories.builder(JsonSchemaFactories.getInstance()).objectMapper(mapper).build();
     protected static Undertow server = null;
 
     public JsonSchemaTest() {
@@ -109,7 +109,7 @@ public class JsonSchemaTest {
     public void testLoadingWithId() throws Exception {
         URL url = new URL("http://localhost:1234/self_ref/selfRef.json");
         JsonNode schemaJson = mapper.readTree(url);
-        JsonSchemaFactory factory = JsonSchemaFactory.getInstance();
+        JsonSchemaFactory factory = JsonSchemaFactories.getInstance();
         @SuppressWarnings("unused")
         JsonSchema schema = factory.getSchema(schemaJson);
     }
