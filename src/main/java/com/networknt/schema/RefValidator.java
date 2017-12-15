@@ -48,7 +48,7 @@ public class RefValidator extends BaseJsonValidator implements JsonValidator {
         }
     }
 
-    public static JsonSchema getRefSchema(JsonSchema parentSchema, ValidationContext validationContext, String refValue) {
+    static JsonSchema getRefSchema(JsonSchema parentSchema, ValidationContext validationContext, String refValue) {
         if (!refValue.startsWith(REF_CURRENT)) {
             // handle remote ref
             String schemaUrl = refValue;

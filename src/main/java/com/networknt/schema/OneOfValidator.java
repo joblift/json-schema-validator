@@ -136,7 +136,7 @@ public class OneOfValidator extends BaseJsonValidator implements JsonValidator {
         
         for (ShortcutValidator validator : schemas) {
             if (!validator.allConstantsMatch(node)) {
-                // take a shortcut: if there is any (required?) constant that does not match,
+                // take a shortcut: if there is any constant that does not match,
                 // we can bail out
                 continue;
             }
