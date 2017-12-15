@@ -6,7 +6,7 @@
 A Java json schema validator that support json schema draft v4. It is a fork of
 [networkntjson-schema-validator ](https://github.com/networknt/json-schema-validator) 
 
-It was forked to add extension mechanisms for example for custom keyword validation.
+*YOU SHOULD USE THE ORIGINAL networknt library AND NOT THIS FORK - ALL RELEVANT CHANGES ARE CURRENTLY MERGED UPSTREAM IN networknt*
 
 ## Maven installation
 
