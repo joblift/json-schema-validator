@@ -243,7 +243,7 @@ public class JsonMetaSchema {
             if (e.getTargetException() instanceof JsonSchemaException) {
                 throw (JsonSchemaException) e.getTargetException();
             } else {
-                logger.warn("Could not load validator " + keyword);
+                logger.warn("Could not load validator " + keyword, e.getTargetException());
                 throw new JsonSchemaException(e.getTargetException());
             }
         } catch(JsonSchemaException e) {
