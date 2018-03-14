@@ -9,6 +9,38 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+## 0.1.17 - 2018-03-09
+
+### Added
+
+### Changed
+- Fixes #72 build JAR with OSGi support. Thanks @lichtin
+- Fixes #71 Github Quickstart section out-of-date. Thanks @lichtin
+
+## 0.1.16 - 2018-03-03
+
+### Added
+
+### Changed
+- Fixes #62 Correct behavior when both allOf and type are present. Thanks @ehrmann
+- Fixes #70 Minor optimizations. Thanks @ehrmann
+
+## 0.1.15 - 2018-02-16
+
+### Added
+
+### Changed
+- Fixes #65 enhance day validation regex for date format. Thanks @chenyan71
+
+
+## 0.1.14 - 2018-02-14
+
+### Added
+
+### Changed
+- Fixes #64 Add simple tests for ValidatorTypeCode. Thanks @ehrmann
+- Fixes #61 Restore validator type code from value. Thanks @ehrmann
+
 ## 0.1.13 - 2017-12-10
 
 ### Added
